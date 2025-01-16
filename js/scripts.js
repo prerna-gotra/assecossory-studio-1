@@ -40,7 +40,22 @@
         target: "#mainNav",
         offset: 74,
     });
+   $(".navbar-toggler.navbar-toggler-right").click(function(){
+     dataLayer.push({
+    'event' : 'top_menu_section',
+    'page_section': 'main_menu',
+    'page_category': '',
+    'page_author': '',
+    'page_length': 'top',
+    'page_path' : '',
+    'click_action' : 'Menu_click',
+    'click_url' : 'https://prerna-gotra.github.io/assecossory-studio-1/',
+    'device' : 'mobile',
+    'browser' : 'chrome'
+     });
+   });
 
+      
     // Collapse Navbar
     var navbarCollapse = function () {
         if ($("#mainNav").offset().top > 100) {
